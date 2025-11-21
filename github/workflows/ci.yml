@@ -7,15 +7,16 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Загрузка кода
+      - name: code loaded
         uses: actions/checkout@v3
 
-      - name: Проверка содержимого
+      - name: Check check
         run: |
-          echo "Проверяем код..."
+          echo "code checking..."
           ls -la
-          echo "CI успешно выполнен!"
+          echo "CI suckcess!"
 
       - name: Проверка HTML-файла
-        run: test -f index.html && echo "Файл найден!"|| echo "HTML НЕ найден!"
+        run: test -f index.html && echo "file finded!"|| echo "HTML not finded!"
+
 
