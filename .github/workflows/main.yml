@@ -1,7 +1,7 @@
+name: Simple CI Example
 run-name: Simple CI Example
 
 on: [push]
-
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -16,7 +16,7 @@ jobs:
           ls -la
           echo "CI suckcess!"
 
-     - name:  Python code checking
+      - name: Python code checking
         run: python main.py
 
 
