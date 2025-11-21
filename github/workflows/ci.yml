@@ -16,7 +16,7 @@ jobs:
           ls -la
           echo "CI успешно выполнен!"
       - name: Проверка HTML-файла
-       Run test -f index.html && echo "$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$HTML найден!" || echo "HTML НЕ найден!$$$$$$$$$$$$$$$$$$$$$$$$$$$$"
+        run: test -f index.html && echo "$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$HTML найден!" || echo "HTML НЕ найден!$$$$$$$$$$$$$$$$$$$$$$$$$$$$"
 
 
 
@@ -25,5 +25,6 @@ jobs:
     
       - name: Проверка HTML на ошибки
         run: html-validator --file index.html --verbose
+
 
 
