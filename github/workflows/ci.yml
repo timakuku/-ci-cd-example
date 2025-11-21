@@ -17,3 +17,9 @@ jobs:
           echo "CI успешно выполнен!"
       - name: Проверка HTML-файла
         run: test -f index.html && echo "Файл найден!"
+
+      - name: Установка HTML Validator
+        run: npm install -g html-validator-cli
+    
+      - name: Проверка HTML на ошибки
+        run: html-validator --file index.html --verbose
