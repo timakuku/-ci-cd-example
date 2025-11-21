@@ -16,7 +16,9 @@ jobs:
           ls -la
           echo "CI suckcess!"
 
-      - name: Проверка HTML-файла
-        run: test -f index.html && echo "file finded!"|| echo "HTML not finded!"
+     - name:  Python code checking
+        run: python main.py
+
+
 
 
