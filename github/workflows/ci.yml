@@ -5,10 +5,7 @@ on: [push]
 jobs:
   build:
     runs-on: ubuntu-latest
-
-    steps:
-      - name: Загрузка кода
-        uses: actions/checkout@v3
+      uses: actions/checkout@v3
 
       - name: Проверка содержимого
         run: |
@@ -17,3 +14,4 @@ jobs:
           echo "CI успешно выполнен!"
       - name: Проверка HTML-файла
         run: test -f index.html && echo "Файл найден!"|| echo "HTML НЕ найден!"
+
