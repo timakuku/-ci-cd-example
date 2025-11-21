@@ -1,5 +1,5 @@
 name: Simple CI Example
-run-name: Simple CI Example
+run-name: ci running
 
 on: [push]
 jobs:
